@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chatapp">
+        <header>
+            <h2>WhatsApp Web</h2>
+        </header>
+
+        <!-- messages between users -->
+        <ul class="chatbox">
+            <!-- incoming chats -->
+            <li class="chat incoming">
+                <!-- <span class="chatbot-icon">&#128126;</span> -->
+                <p class="message">Hi there &#128079; <br> Lets Chat</p>
+            </li>
+
+            <!-- outgoing chats -->
+            <!-- <li class="chat outgoing">
+                <p>Out going Message by the Lorem ipsum dolor sit amet. user</p>
+            </li> -->
+
+        </ul>
+        <div class="user-input">
+            <input id="txarea" placeholder="Enter a message ... " required>
+            <span id="send-btn">Send</span>
+        </div>
+    </div>
+</body>
+
+<!-- Connecting the client and the node server -->
+
+<!-- defer means scripts runs after DOM render everytime there is change in DOM -->
+<script defer src="http://localhost:800/socket.io/socket.io.js"></script>
+<script defer src="script.js"></script>
+
+</html>

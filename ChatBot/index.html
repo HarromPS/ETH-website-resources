@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tsukimi+Rounded:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <!-- chatbot main container -->
+    <div class="container hide">
+        <!-- main heading of chat bot -->
+        <header>
+            <h2>ChatBot</h2>
+            <input id="clear-btn" type="button" value="clear all">
+        </header>
+
+        <!-- messages between bot & user -->
+        <ul class="chatbox">
+            <!-- incoming chats -->
+            <!-- <li class="chat incoming">
+                <span class="chatbot-icon">&#128126;</span>
+                <p class="message">Hi there &#128079; <br> How can I assist you today</p>
+            </li> -->
+
+            <!-- outgoing chats -->
+            <!-- <li class="chat outgoing">
+                <p>Out going Message by the Lorem ipsum dolor sit amet. user</p>
+            </li> -->
+        </ul>
+
+        <!-- user sending message -->
+        <div class="user-input">
+            <textarea name="textarea" id="txarea" placeholder="Enter a message ... " required cols="10"
+                rows="1"></textarea>
+            <span id="send-btn">&#128073;</span>
+        </div>
+    </div>
+
+    <div class="chatbot-toggle-btn">
+        <span id="span1">&#128231;</span>
+        <span id="span2">&#10006;</span>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

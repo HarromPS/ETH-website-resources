@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="style-src 'self' https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.2.0/mapbox-gl-directions.css https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css 'unsafe-inline'; script-src 'self' https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js https://cdn.tailwindcss.com https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.2.0/mapbox-gl-directions.js  http://localhost:* http://127.0.0.1:* 'unsafe-inline'; worker-src 'self' 'unsafe-inline' * blob:;">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <title>Google map</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.2.0/mapbox-gl-directions.css"
+        type="text/css">
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.2.0/mapbox-gl-directions.js"></script>
+    <div class="dashboard">
+        <div class="name">
+            <ul>
+                <a href="./simple.html">
+                    <li>SIMPLE MAP</li>
+                </a>
+                <a href="./3d-map.html">
+                    <li>3D MAP</li>
+                </a>
+                <a href="./map_with_search.html">
+                    <li>MAP WITH SEARCH</li>
+                </a>
+                <a href="./routes.html">
+                    <li>ROUTES</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div id='map'></div>
+</body>
+<script nonce="randomvalue">
+
+    let accessToken = 'pk.eyJ1IjoiaC1yaTBtLSIsImEiOiJjbHJhaHJ2bWwwZzNrMmtsZG1rdHdxYWdlIn0.Bo1ASRxVpr0IPqqBzK85lw';
+    // access token
+    mapboxgl.accessToken = accessToken;
+
+    // creating a map object
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [77.292066915344, 19.112738099388025],
+        zoom: 17,
+        showPlaceLabels: true,
+        showRoadLabels: true,
+        container: 'map',
+    });
+
+    // when map loads, it fires a callback function
+    map.on('load', () => {
+        map.addLayer({
+            id: 'terrain-data',
+            type: 'line',
+            source: {
+                type: 'vector',
+                url: 'mapbox://mapbox.mapbox-steets-v2'
+            },
+            'source-layer': 'contour'
+        });
+    });
+
+    const marker1 = new mapboxgl.Marker()
+        .setLngLat([77.292066915344, 19.112738099388025])
+        .addTo(map);
+
+
+    // Add the control to the map.
+    // map.addControl(
+    //     new MapboxGeocoder({
+    //         accessToken: mapboxgl.accessToken,
+    //         mapboxgl: mapboxgl
+    //     })
+    // );
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+</script>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,144 @@
+/* *{
+    overflow:auto;
+} */
+
+/* Next section */
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* height: 380px; */
+    max-width: 80%;
+    /* border: 2px solid black; */
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    height: 200px;
+    margin-top: 36px;
+    border-radius: 47px;
+    border: 2px solid #c8c8c8;
+}
+
+/* contact section */
+.contact-us {
+    background-color: #ededed;
+    height: 542px;
+}
+
+.contact-us h2 {
+    margin: 12px 12px;
+    padding: 12px 12px;
+}
+
+#phone {
+    overflow: hidden;
+}
+
+.user-inputs {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.inputs {
+    width: 60%;
+    display: block;
+    margin: 12px auto;
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 3px 9px;
+    font-size: 17px;
+}
+
+.footer {
+    text-align: center;
+    /* margin: 12px 12px; */
+    padding: 12px 12px;
+    font-size: 17px;
+    color: white;
+}
+
+/* utility classes */
+.text-center {
+    text-align: center;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    height:4px;
+    width: 33px;
+    margin: 4px 3px;
+    background-color:white;
+
+}
+
+/* media query & responsiveness */
+@media only screen and (max-width: 1055px) {
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all 0.6s ease-in 0s;
+    }
+    .nav-list {
+        width: 70%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-list li{
+        list-style: none;
+        margin: 10px 0px;
+    }
+    .nav-list li a{
+        font-size: 20px;
+    }
+    .logo{
+        position: absolute;
+        left: 40px;
+        width: 40%;
+    }
+    #search{
+        width:33%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity:0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .second-section{
+        flex-direction: column-reverse;
+    }
+    .thumbnail img{
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width:560px) and (min-width: 200px){
+    .footer{
+        font-size: 12px;
+    }
+}

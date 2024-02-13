@@ -1,0 +1,123 @@
+/* game reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: red;
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+/* game container */
+.game-over {
+    /* background-color: red; */
+    visibility: hidden;
+}
+
+.score {
+    /* background-color: blue; */
+    display: block;
+}
+
+.game-container {
+    background: url('image/bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    /* background-size: contain;
+    background-size: cover; */
+}
+
+/* score */
+/* .score{
+    position: absolute;
+    border: 2px solid black;
+    font-size: 37px;
+    width: 341px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Tsukimi Rounded', sans-serif;
+} */
+
+/* game info */
+.info{
+    position: absolute;
+    top: 123px;
+    left: 20vw;
+    font-size: 50px;
+    text-align :center;
+}
+
+
+/* dino */
+.dino {
+    background: url("image/dianasour.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 188px;
+    width: 165px;
+    position: absolute;
+    bottom: 0px;
+    left: 32px;
+}
+
+/* animation of the dino using keyframes */
+.animate-dino {
+    animation: dino 0.6s linear;
+}
+
+@keyframes dino {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 422px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.obstacle-animate {
+    animation: dragon 5s linear 0s infinite forwards;
+}
+
+@keyframes dragon {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -10vw;
+    }
+}
+
+/* obstacle  */
+.obstacle {
+    background: url("image/dragon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 180px;
+    bottom: 0px;
+    right: 232px;
+    position: absolute;
+}
+
+/* creator-content */
+.creator-content{
+    /* border:2px solid red; */
+    position: absolute;
+    top: 32px;
+    font-size: 2.8rem;
+    left: 21vw;
+    color: rgb(252, 2, 2);
+}

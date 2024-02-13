@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "IT Google Map",
+  "version": "1.0",
+  "description": "This is an extension made for the IT Dept. SGGSIE&T, Vishnupuri, Nanaded-431606",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon-128.png"
+  },
+  "background": {
+    "service_worker": "main.js"
+  },
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}

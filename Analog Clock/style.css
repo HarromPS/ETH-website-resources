@@ -1,0 +1,67 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* background of the clock container */
+#clock-container {
+    position: relative;
+    /* now parent is relative then its childs will be positioned a/c to the relative position of its parent */
+
+    background: url("clock.png");
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    background-size: 100%;
+    margin: auto;
+
+    /* now its a square & inside this all the elements are defined */
+    height: 30vw;
+    width: 30vw;
+    top:30px;
+}
+
+#hours,
+#minutes,
+#seconds {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hours {
+    height: 24%;
+    width: 2%;
+    top: 26%;
+    left: 49.5%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minutes {
+    height: 30%;
+    width: 1.2%;
+    top: 20%;
+    left: 49.5%;
+    opacity: 0.5;
+    /* display: none; */
+}
+
+#seconds {
+    height: 36%;
+    width: 1%;
+    top: 15%;
+    left: 49.3%;
+    opacity: 0.4;
+    /* background-color: rgb(147, 146, 146); */
+    /* display: none; */
+}
+
+/* #yash{
+    font-size: 2rem;
+    color: rgb(0, 72, 253);
+    width: 13%;
+    margin:auto;
+    padding: 12px 0px;
+} */

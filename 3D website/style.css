@@ -1,0 +1,512 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #0000c8;
+}
+
+/* main section */
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page1 {
+    /* viewport fll */
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    position: relative;
+    object-fit: contain;
+}
+
+/* video in page1 */
+#page1>video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page1>nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12px 0px 0px;
+    align-items: center;
+    position: absolute;
+    height: 15vh;
+    width: 100vw;
+    /* background-color: yellow; */
+}
+
+#page1 nav img {
+    height: 85%;
+    margin: 13px 12px;
+}
+
+.right-nav {
+    margin-right: 60px;
+}
+
+.bottom-page1 {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    /* border: 2px solid black; */
+    height: 50%;
+    width: 70%;
+    color: white;
+}
+
+.bottom-page1 .h1-primary {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin: 2px 12px;
+    font-weight: lighter;
+}
+
+.bottom-page1-inner {
+    display: flex;
+}
+
+/* Page 2 */
+#page2 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+.center {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.center h3 {
+    color: white;
+    font-weight: 100;
+    margin: 25px 0px;
+}
+
+.center p {
+    height: 30%;
+    width: 69%;
+    font-size: 2.4rem;
+    margin: 55px 0px;
+    color: black;
+    line-height: 1.8;
+}
+
+#page3 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url("img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page4 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+#page5 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url("img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page6 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+#page7 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url("img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page8 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+#page8 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom-page8 {
+    position: absolute;
+    bottom: 15%;
+    color: white;
+    left: 33%;
+    text-align: center;
+}
+
+.bottom-page8 h2 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin: 2px 12px;
+    font-weight: lighter;
+}
+
+.circle {
+    /* same as page 1 */
+    position: relative;
+    z-index: 3;
+    height: 450px;
+    width: 450px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    top: 15%;
+    left: -2%;
+    margin: auto;
+}
+
+.inner-circle {
+    /* same as page 1 */
+    position: relative;
+    z-index: 3;
+    height: 311px;
+    width: 311px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 55%;
+    top: 15%;
+    margin: auto;
+}
+
+#page9 {
+    /* same as page 1 */
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+.page9-inner1 {
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+}
+
+.page9-inner1 h2 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin: 22px 52px;
+    padding: 12px 75px;
+}
+
+.page9-inner2 {
+    height: 50%;
+    width: 60%;
+}
+
+.page9-inner2 .image {
+    background: url("https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 48vh;
+    width: 44vw;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    background-color: white;
+}
+
+#page10 {
+    /* same as page 1 */
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+.blank {
+    width: 40%;
+    height: 100%;
+}
+
+.filled {
+    height: 100%;
+    ;
+    width: 60%;
+}
+
+.page10-inner {
+    margin: 12px 65px;
+    padding: 12px 12px;
+}
+
+.page10-inner h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.paras-3 {
+    width: 80%;
+    margin: 12px 0px;
+    color: white;
+}
+
+#page11 {
+    /* same as page 1 */
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+#page11 h2 {
+    margin: 12px 12px;
+    padding: 30px 95px;
+    font-size: 2rem;
+}
+
+.inners {
+    display: flex;
+    flex-direction: column;
+}
+
+.page11-inner {
+    display: flex;
+    padding: 17px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+    /* height: 33vh;
+    width: 80%;
+ */
+}
+
+.page11-images {
+    position: relative;
+    height: 30%;
+    width: 33%;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.page11-images img {
+    width: 45vh;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.page11-details {
+    width: 45%;
+    /* background-color:pink; */
+}
+
+.page11-paras1 {
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+    padding: 12px 12px;
+    margin: 5px 12px;
+}
+
+.page11-paras2 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 12px 12px;
+    margin: 0px 12px;
+}
+
+#page12 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+#page13 {
+    /* same as page 1 */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000c8;
+}
+
+.page12-inner-above {
+    display: flex;
+    height: 70%;
+    width: 100%;
+}
+
+.page12-left {
+    width: 40%;
+    /* background-color: orange; */
+}
+
+.page12-right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    /* background-color: rgb(0, 255, 26); */
+}
+
+.page12-right h2 {
+    font-size: 4.5rem;
+    margin: 19px 32%;
+    width: 60%;
+    font-weight: 100;
+}
+
+.page12-paras {
+    margin: 19px 32%;
+    width: 55%;
+}
+
+#page13 {
+    /* same as page 1 */
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background-color: #000213;
+}
+
+#page13 div {
+    margin: 15px 95px;
+    padding-top: 40px;
+}
+
+#page13 div h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+#page13 button {
+    margin: 25px 95px;
+}
+
+#page14 {
+    /* same as page 1 */
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    color: white;
+    background-color: #000213;
+}
+
+#page14 .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 57px 32px;
+    position: absolute;
+
+}
+
+#page14 .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    padding: 25px 25px;
+    margin-left: 47px;
+    border: 1px 0px 1px 0px;
+    border-color: gray;
+    transition:all ease .5s;
+}
+
+#page14 .social-media:hover {
+    background-color: blue;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* .page14-center{
+    height: 0;
+    width: 88vw;
+    padding: 25px 25px;
+    background-color: red;
+    position: absolute;
+    transform: translate(-15px, 0px);
+} */
+#page14 .social-media p i {
+    font-size: 32px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 5px;
+    left: 33%;
+}
+/* utility classes */
+.btn-one {
+    padding: 10px 20px;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 35px;
+    margin: 4px 3px;
+    background: #0142f5;
+    color: white;
+    font-size: 17px;
+}
+
+.btn-two {
+    padding: 6px 20px;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 35px;
+    margin: 4px 3px;
+    background: #f5f6f7;
+    color: rgb(8, 8, 8);
+    font-size: 14px;
+}
+
+.btn-three {
+    padding: 6px 20px;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 35px;
+    margin: 4px 3px;
+    background: #0142f5;
+    color: white;
+    font-size: 14px;
+}
+
+.paras {
+    width: 45%;
+    margin: 12px 15px;
+    /* border: 2px solid black; */
+}
